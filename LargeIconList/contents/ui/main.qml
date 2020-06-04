@@ -94,7 +94,6 @@ KWin.Switcher {
                         verticalAlignment: Text.AlignVCenter
                         text: dialogMainItem.itemCaption(caption, minimized)
                         font.weight: index === compactListView.currentIndex ? Font.Bold : Font.Normal
-                        font.pointSize: 12
                         elide: Text.ElideMiddle
                         anchors {
                             left: iconItem.right
