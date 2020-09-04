@@ -80,8 +80,8 @@ KWin.Switcher {
                     QIconItem {
                         id: iconItem
                         icon: model.icon
-                        width: 48
-                        height: 48
+                        width: 32
+                        height: 32
                         anchors {
                             verticalCenter: parent.verticalCenter
                             left: parent.left
@@ -93,7 +93,7 @@ KWin.Switcher {
                         horizontalAlignment: Text.AlignLeft
                         verticalAlignment: Text.AlignVCenter
                         text: dialogMainItem.itemCaption(caption, minimized)
-                        font.weight: index === compactListView.currentIndex ? Font.Bold : Font.Normal
+//                         font.weight: index === compactListView.currentIndex ? Font.Bold : Font.Normal
                         elide: Text.ElideMiddle
                         anchors {
                             left: iconItem.right
@@ -145,7 +145,7 @@ KWin.Switcher {
                     var height = textElement.height;
                     textElement.destroy();
                     // icon size or two text elements and margins and hoverItem margins
-                    return Math.max(52, height + hoverItem.margins.top + hoverItem.margins.bottom);
+                    return Math.max(40, height + hoverItem.margins.top + hoverItem.margins.bottom);
                 }
                 id: compactListView
                 // the maximum text width + icon item width (32 + 4 margin) + margins for hover item
